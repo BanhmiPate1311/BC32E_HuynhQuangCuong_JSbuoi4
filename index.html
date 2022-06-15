@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BT_JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ---- Bài 1 ----  -->
+      <div class="card" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 1: Xuất 3 số theo thứ tự tăng dần
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="so1"
+                placeholder="Nhập số thứ 1"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="so2"
+                placeholder="Nhập số thứ 2"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="so3"
+                placeholder="Nhập số thứ 3"
+              />
+            </div>
+          </div>
+          <button class="btn btn-danger" id="sapXep">Sắp xếp</button>
+        </div>
+        <div class="card-footer text-center">
+          <div id="ketQuaSapXep" class="alert alert-primary" role="alert">
+            Kết quả
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 2 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 2: Chương trình "chào hỏi"
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <div class="form-group">
+                <select class="form-control" id="thanhVien">
+                  <option value="0">Chọn thành viên</option>
+                  <option value="1">Bố</option>
+                  <option value="2">Mẹ</option>
+                  <option value="3">Anh Trai</option>
+                  <option value="4">Em gái</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-danger" id="chao">Gửi lời chào</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatChao" class="alert alert-primary" role="alert">
+            Bạn muốn chào ai?
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 3 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 3: Đếm số chẵn lẻ
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="soThu1"
+                placeholder="Nhập số thứ 1"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="soThu2"
+                placeholder="Nhập số thứ 2"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="soThu3"
+                placeholder="Nhập số thứ 3"
+              />
+            </div>
+          </div>
+          <button class="btn btn-danger" id="dem">Đếm</button>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatDem" class="alert alert-primary" role="alert">
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 4 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 4: Đoán hình tam giác
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="canhA"
+                placeholder="Nhập cạnh thứ 1"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="canhB"
+                placeholder="Nhập cạnh thứ 2"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="canhC"
+                placeholder="Nhập cạnh thứ 3"
+              />
+            </div>
+          </div>
+          <button class="btn btn-danger" id="doan">Dự Đoán</button>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatDoan" class="alert alert-primary" role="alert">
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
